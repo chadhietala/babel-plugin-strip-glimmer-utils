@@ -1,0 +1,9 @@
+{
+  "name": "babel-plugin-strip-glimmer-utils",
+  "version": "0.0.1",
+  "description": "Babel plugin for stripping glimmer utils",
+  "main": "index.js",
+  "repository": {},
+  "author": "Chad Hietala <chadhietala@gmail.com>",
+  "license": "MIT"
+}
