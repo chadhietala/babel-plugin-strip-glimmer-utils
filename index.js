@@ -1,4 +1,4 @@
-export default function (babel) {
+function stripGlimmerUtils(babel) {
   return {
     name: 'strip glimmer utils',
     visitor: {
@@ -14,4 +14,8 @@ export default function (babel) {
       }
     }
   }
+}
+
+stripGlimmerUtils.baseDir = function() {
+  return __dirname;
 }
