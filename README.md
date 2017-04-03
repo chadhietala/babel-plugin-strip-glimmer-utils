@@ -5,6 +5,6 @@
 ```
 plugins: [
   ...
-  ['strip-glimmer-utils', { source: '@glimmer/utils' }]
+  ['strip-glimmer-utils', { source: '@glimmer/utils', bindings: ['unwrap' /*, 'expect' */] }]
 ]
 ```
