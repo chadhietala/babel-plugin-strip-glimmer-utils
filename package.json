@@ -9,6 +9,9 @@
   "repository": {},
   "author": "Chad Hietala <chadhietala@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "babel-plugin"
+  ],
   "devDependencies": {
     "babel-core": "^6.24.0",
     "qunitjs": "^2.3.0"

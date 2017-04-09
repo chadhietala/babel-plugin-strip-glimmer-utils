@@ -11,8 +11,9 @@ function stripGlimmerUtils(babel) {
               if (path.parentPath.isCallExpression()) {
                 path.parentPath.replaceWith(path.parentPath.node.arguments[0]);
               }
-              b.path.remove();
             });
+
+            b.path.remove();
           }
         });
 

@@ -71,3 +71,28 @@ class Foo {
   }
 }`)
 });
+
+QUnit.test(`handles multiple bindings`, (assert) => {
+  let transformed = transform(`
+    import { expect, A } from '@glimmer/util';
+    class Foo {
+      foo(arg) {
+        return expect(A(arg), 'wat wat');
+      }
+      bar(arg) {
+        return expect(A(arg), 'wat wat');
+      }
+    }
+  `);
+
+  assert.equal(transformed, `
+import { A } from '@glimmer/util';
+class Foo {
+  foo(arg) {
+    return A(arg);
+  }
+  bar(arg) {
+    return A(arg);
+  }
+}`)
+});
